@@ -1,3 +1,82 @@
+/* تنسيقات CSS لجعل الموقع يبدو "أسطورياً" */
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    /* خلفية داكنة مع تدرج بسيط */
+    background: linear-gradient(135deg, #1f1f1f 0%, #0a0a0a 100%);
+    color: #e0e0e0; /* لون نص فاتح */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(30, 30, 30, 0.95); /* خلفية شبه شفافة داكنة */
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 0 40px rgba(255, 69, 0, 0.3); /* ظل برتقالي مميز */
+    max-width: 900px;
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #ff4500; /* إطار بلون مميز */
+}
+
+h1 {
+    color: #ffaa00; /* لون ذهبي/برتقالي للعناوين */
+    font-size: 3em;
+    text-shadow: 0 0 10px rgba(255, 170, 0, 0.5); /* ظل نص متوهج */
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #a0a0a0;
+}
+
+/* تنسيق وسم الرابط <a> الجديد (class="play-button-link") ليظهر كزر ناري */
+.play-button-link {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #ff4500; /* لون برتقالي ناري */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s, transform 0.1s;
+    text-decoration: none; /* إزالة الخط الأزرق تحت الرابط (هذا هو الحل) */
+}
+
+.play-button-link:hover {
+    background-color: #e03f00; /* لون أغمق عند التمرير */
+    transform: translateY(-2px); /* تأثير رفع بسيط */
+}
+
+
+/* تنسيق قائمة المميزات */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+li:before {
+    content: "⚡"; /* رمز البرق قبل كل ميزة */
+    margin-left: 10px;
+    color: #ffaa00;
+}
+
 /* تنسيق أيقونات التواصل الاجتماعي */
 .social-links {
     margin-top: 25px;
