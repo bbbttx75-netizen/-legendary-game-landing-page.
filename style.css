@@ -50,7 +50,7 @@ p {
     cursor: pointer;
     margin: 20px 0;
     transition: background-color 0.3s, transform 0.1s;
-    text-decoration: none; /* إزالة الخط الأزرق تحت الرابط (هذا هو الحل) */
+    text-decoration: none; /* إزالة الخط الأزرق تحت الرابط (الحل لتنسيق الزر) */
 }
 
 .play-button-link:hover {
