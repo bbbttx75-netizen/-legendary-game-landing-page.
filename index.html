@@ -1,47 +1,15 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة البايثون الديناميكية</title>
+    <meta charset="utf-8">
+    <title>لعبة فيجيتار الخاصة بي</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding-top: 50px;
-        }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        h1 {
-            color: #007bff;
-        }
+        body { margin: 0; background-color: #000000; }
     </style>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    
 </head>
 <body>
-    <div class="container">
-        <h1>أهلاً بك، {{ user }}!</h1>
-        
-        <p>لقد تم إنشاء هذه الصفحة ديناميكياً باستخدام كود بايثون (Flask).</p>
-        
-        <p>
-            **تاريخ اليوم هو:** <span style="font-weight: bold; color: #28a745;">{{ date }}</span>
-        </p>
-        
-        <hr>
-        
-        <h3>التعليمات:</h3>
-        <ul>
-            <li>لتغيير رسالة الترحيب، عدّل قيمة `current_user` في ملف `app.py`.</li>
-            <li>لتغيير التنسيق، عدّل قسم `<style>` في ملف `index.html`.</li>
-        </ul>
-    </div>
+    <script src="game.js"></script>
 </body>
 </html>
